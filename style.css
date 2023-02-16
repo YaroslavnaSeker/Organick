@@ -53,16 +53,8 @@ header {
 .logo {
   width: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-.logo-image {
-  width: 37px;
-  height: 54px;
-}
-.logo-name {
-  width: 153px;
-  height: 29px;
 }
 
 .navigation ul {
