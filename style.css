@@ -1,0 +1,172 @@
+.welcome-button-text, .basket-number, .basket-text, .navigation-size, .navigation-size a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.welcome-heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.welcome-text {
+  font-family: "Yellowtail";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  letter-spacing: 0.36px;
+  color: #7EB693;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  padding: 0px 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-leftbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 844px;
+}
+
+.logo {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-image {
+  width: 37px;
+  height: 54px;
+}
+.logo-name {
+  width: 153px;
+  height: 29px;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 40px;
+}
+.navigation-size, .navigation-size a {
+  list-style-type: none;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+.navigation-size a {
+  text-decoration: none;
+}
+.navigation-size :hover {
+  color: #7EB693;
+}
+.navigation-big {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.basket {
+  border: 1px solid #D4D4D4;
+  border-radius: 33px;
+  padding: 7px 30px 7px 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.basket-image {
+  background: #274C5B;
+  border-radius: 100px;
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.basket-text {
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  margin-right: 7px;
+}
+.basket-number {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+
+.conteiner {
+  max-width: 1440px;
+}
+
+.welcome {
+  display: flex;
+}
+.welcome-background {
+  position: relative;
+  background: #274C5B;
+  border-radius: 0px;
+}
+.welcome-above {
+  position: absolute;
+  padding: 220px 1001px 250px 30px;
+}
+.welcome-text {
+  margin-bottom: 14px;
+}
+.welcome-heading {
+  font-size: 70px;
+  line-height: 84px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  margin-bottom: 30px;
+}
+.welcome-button {
+  background: #EFD372;
+  border: 1px solid #EFD372;
+  border-radius: 16px;
+  padding: 24px 9px 24px 33px;
+  display: flex;
+  gap: 24px;
+}
+.welcome-button-text {
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #274C5B;
+}
+.welcome-button-arrow {
+  width: 38px;
+  height: 34px;
+  border-radius: 100px;
+  background: #335B6B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

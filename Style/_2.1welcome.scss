@@ -1,0 +1,59 @@
+.conteiner {
+    max-width: 1440px;
+}
+.welcome {
+    display: flex;
+
+    &-background {
+        position: relative;
+        background: #274C5B;
+        border-radius: 0px;
+    }
+
+    &-above {
+        position: absolute;
+        padding: 220px 1001px 250px 30px;
+    }
+
+    &-text {
+        @extend %Yellowtail400;
+        margin-bottom: 14px;
+    }
+
+    &-heading {
+        @extend %roboto700;
+        font-size: 70px;
+        line-height: 84px;
+        letter-spacing: 0.36px;
+        color: #274C5B;
+        margin-bottom: 30px;
+    }
+
+    &-button {
+        background: #EFD372;
+        border: 1px solid #EFD372;
+        border-radius: 16px;
+        padding: 24px 9px 24px 33px;
+        display: flex;
+        gap: 24px;
+
+        &-text {
+            @extend %roboto400;
+            font-size: 19px;
+            line-height: 32px;
+            letter-spacing: 0.36px;
+            text-transform: capitalize;
+            color: #274C5B;
+        }
+
+        &-arrow {
+            width: 38px;
+            height: 34px;
+            border-radius: 100px;
+            background: #335B6B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

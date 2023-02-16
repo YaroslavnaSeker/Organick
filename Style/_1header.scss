@@ -1,0 +1,113 @@
+header {
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-leftbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 844px;
+    }
+}
+
+.logo {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-image {
+        width: 37px;
+        height: 54px;
+    }
+
+    &-name {
+        width: 153px;
+        height: 29px;
+    }
+}
+
+.navigation {
+
+    & ul {
+       display: flex;
+        gap: 40px;
+    } 
+
+    &-size {
+        list-style-type: none;
+        @extend %roboto400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.36px;
+        color: #274C5B;
+
+        & a {
+            text-decoration: none;
+            @extend .navigation-size;
+        }
+
+        :hover {
+            color: #7EB693;
+        }
+    }    
+
+        // &-box {
+        //     width: 220px;
+        //     display: flex;
+        //     justify-content: space-between;
+        // }
+
+    &-big {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+}
+
+.basket {
+    // width: 159px;
+    // height: 70px;
+    border: 1px solid #D4D4D4;
+    border-radius: 33px;
+    padding: 7px 30px 7px 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-image {
+        background: #274C5B;
+        border-radius: 100px;
+        width: 56px;
+        height: 56px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-text {
+        @extend %roboto400;
+        font-size: 17px;
+        line-height: 29px;
+        letter-spacing: 0.36px;
+        color: #274C5B;
+        margin-right: 7px;
+    }
+
+    &-number {
+        @extend %roboto400;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.36px;
+        color: #274C5B;
+    }
+}
