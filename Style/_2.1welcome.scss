@@ -3,11 +3,13 @@
 }
 .welcome {
     display: flex;
+    margin-bottom: 140px;
 
     &-background {
         position: relative;
         background: #274C5B;
         border-radius: 0px;
+        height: 913px;
     }
 
     &-above {

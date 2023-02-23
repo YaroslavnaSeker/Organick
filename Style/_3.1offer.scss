@@ -1,0 +1,44 @@
+.offer {
+    display: flex;
+    margin-bottom: 140px;
+    gap: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    &_left {
+        border-radius: 30px;
+        background: #D4D4D4;
+
+        &-image {
+            position: relative;
+            width: 665px;
+            height: 378px;
+        }
+
+        &-text {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            padding: 105px 391px 105px 55px;
+
+
+            &-header {
+                @extend %Yellowtail400;
+                color: #FFFFFF;
+            }
+            
+        }
+    }
+
+    &-right {
+        background: #D4D4D4;
+        border-radius: 30px;
+        
+
+        & img {
+            position: relative;
+            width: 665px;
+            height: 378px;
+        }
+    }
+}
