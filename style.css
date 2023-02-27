@@ -1,4 +1,4 @@
-.welcome-button-text, .basket-number, .basket-text, .navigation-size, .navigation-size a {
+.offer-text-main, .welcome-button-text, .basket-number, .basket-text, .navigation-size, .navigation-size a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -10,7 +10,7 @@
   font-weight: 700;
 }
 
-.offer_left-text-header, .welcome-text {
+.offer-text-header, .welcome-text {
   font-family: "Yellowtail";
   font-style: normal;
   font-weight: 400;
@@ -118,7 +118,6 @@ header {
 
 .welcome {
   display: flex;
-  margin-bottom: 140px;
 }
 .welcome-background {
   position: relative;
@@ -167,35 +166,42 @@ header {
 
 .offer {
   display: flex;
-  margin-bottom: 140px;
-  gap: 50px;
-  margin-left: 30px;
-  margin-right: 30px;
+  justify-content: space-between;
+  padding: 140px 30px;
 }
-.offer_left {
-  border-radius: 30px;
-  background: #D4D4D4;
-}
-.offer_left-image {
+.offer-left {
   position: relative;
+  background: url(.jpg), #D4D4D4;
+  border-radius: 30px;
   width: 665px;
   height: 378px;
 }
-.offer_left-text {
-  position: absolute;
+.offer-text {
   display: flex;
   flex-direction: column;
-  padding: 105px 391px 105px 55px;
+  position: absolute;
+  top: 105px;
+  left: 55px;
 }
-.offer_left-text-header {
+.offer-text-header {
+  color: #FFFFFF;
+}
+.offer-text-main {
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.36px;
   color: #FFFFFF;
 }
 .offer-right {
-  background: #D4D4D4;
-  border-radius: 30px;
-}
-.offer-right img {
   position: relative;
+  background: url(.jpg), #D4D4D4;
+  border-radius: 30px;
   width: 665px;
   height: 378px;
+}
+.offer-color {
+  color: #7EB693;
+}
+.offer-colorgreen {
+  color: #274C5B;
 }/*# sourceMappingURL=style.css.map */

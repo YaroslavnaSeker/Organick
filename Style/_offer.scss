@@ -1,0 +1,51 @@
+.offer {
+    display: flex;
+    justify-content: space-between;
+    padding: 140px 30px;
+
+    &-left {
+    position: relative;
+    background: url(.jpg), #D4D4D4;
+    border-radius: 30px;
+    width: 665px;
+    height: 378px;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 105px;
+        left: 55px;
+
+
+        &-header {
+            @extend %Yellowtail400;
+            color: #FFFFFF;
+        }
+    
+        &-main {
+            @extend %roboto400;
+            font-size: 40px;
+            line-height: 52px;
+            letter-spacing: 0.36px;
+            color: #FFFFFF;
+        }
+    }
+
+    &-right {
+        position: relative;
+        background: url(.jpg), #D4D4D4;
+        border-radius: 30px;
+        width: 665px;
+        height: 378px;
+        }
+
+    &-color {
+        color: #7EB693;
+    }
+    &-colorgreen {
+        color: #274C5B;
+    }
+    
+}
