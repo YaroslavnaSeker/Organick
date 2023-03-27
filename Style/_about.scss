@@ -1,0 +1,108 @@
+.about {
+    padding: 130px 33px 150px 30px;
+    background: #F9F8F8;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    &-image {
+        border-radius: 0px;
+        width: 675px;
+        height: 642px;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+    }    
+        
+    &-header {
+        @extend %Yellowtail400;
+        text-transform: capitalize;
+    }
+    
+    &-bold {
+        @extend %roboto700;
+        font-size: 45px;
+        line-height: 58px;
+        letter-spacing: 0.36px;
+        text-transform: capitalize;
+        color: #274C5B;
+    }
+
+    &-body {
+        @extend %OpenSans400;
+        margin-top: 22px;
+        margin-bottom: 56px;
+    }
+
+    &-conteiner {
+        display: flex;
+        flex-direction: column;
+
+        &-box {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+            &-image {
+                width: 100px;
+                height: 100px;
+                background: #FFFFFF;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 34px;
+
+                & img {
+                    padding: 27px 23px 31px;
+                }
+            }
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                gap: 9px;
+                margin-bottom: 25px;
+            }
+
+            &-text h5 {
+                @extend %roboto400;
+                font-size: 25px;
+                line-height: 35px;
+                letter-spacing: 0.36px;
+                color: #274C5B;
+            }
+
+            &-text p {
+                @extend %OpenSans400;
+            }
+        }
+    }
+     
+    &-button {
+        margin-top: 16px;
+        padding: 24px 8px 33px;
+        background: #274C5B;
+        border: 1px solid #274C5B;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-text {
+            @extend %roboto400;
+            font-size: 19px;
+            line-height: 32px;
+            letter-spacing: 0.6px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+
+        &-arrow {
+            border: 1px solid #FFFFFF;
+        }
+    }
+}
