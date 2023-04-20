@@ -1,0 +1,93 @@
+.products {
+
+    &-title {
+        margin-left: 60px;
+        padding: 0 548px 2px 547px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 42px;
+    }
+
+    &-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 100%;
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            background: #F9F8F8;
+            border-radius: 30px;
+            width: 447px;
+            height: 590px;
+
+            &-vegetable {
+                @extend %OpenSans700;
+                padding: 5px 20px;
+                background: #274C5B;
+                border-radius: 8px;
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+
+            &-image {
+                width: 387px;
+                height: 378px;
+                padding: 0 30px 19px 30px ;
+            }
+
+            &-name {
+                @extend %roboto400;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 35px;
+                letter-spacing: 0.36px;
+                color: #274C5B;
+                margin-left: 30px;
+                margin-bottom: 11px;
+            }
+
+            &-line {
+                background: #D4D4D4;
+                width: 387px;
+                margin-left: 30px;
+                margin-bottom: 11px;
+            }
+
+            &-price {
+                display: flex;
+                align-items: center;
+
+                &-old {
+                    @extend %OpenSans400;
+                    font-size: 17px;
+                    text-decoration-line: line-through;
+                    color: #B8B8B8;
+                    margin-left: 30px;
+                    margin-right: 10px;
+                }
+
+                &-new {
+                    @extend %OpenSans700;
+                    font-size: 18px;
+                    line-height: 32px;
+                    letter-spacing: 0.36px;
+                    color: #274C5B;
+                    margin-right: 83px;
+                }
+
+                &-stars {
+                    width: 14px;
+                    height: 13px;
+                    gap: 3px;
+                    display: flex;
+                    justify-content: flex-start;
+                    
+                }
+            }
+        }
+    }
+}

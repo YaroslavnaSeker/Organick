@@ -1,4 +1,4 @@
-.about-button-text, .about-conteiner-box-text h5, .offer-text-main, .welcome-button-text, .basket-number, .basket-text, .navigation-size, .navigation-size a {
+.products-box-card-name, .about-conteiner-box-text h5, .offer-text-main, .welcome-button-text, .basket-number, .basket-text, .navigation-size, .navigation-size a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -20,7 +20,7 @@
   color: #7EB693;
 }
 
-.about-conteiner-box-text p, .about-body {
+.products-box-card-price-old, .about-conteiner-box-text p, .about-body {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -28,6 +28,16 @@
   line-height: 32px;
   letter-spacing: 0.36px;
   color: #525C60;
+}
+
+.products-box-card-price-new, .products-box-card-vegetable {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+  color: #FFFFFF;
 }
 
 * {
@@ -137,7 +147,7 @@ header {
 }
 .welcome-above {
   position: absolute;
-  padding: 220px 1001px 250px 30px;
+  padding: 220px 1100px 250px 30px;
 }
 .welcome-text {
   margin-bottom: 14px;
@@ -223,6 +233,7 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  margin-bottom: 120px;
 }
 .about-image {
   border-radius: 0px;
@@ -282,22 +293,88 @@ header {
   color: #274C5B;
 }
 .about-button {
-  margin-top: 16px;
-  padding: 24px 8px 33px;
   background: #274C5B;
+  display: flex;
   border: 1px solid #274C5B;
   border-radius: 16px;
+  padding: 25px 71px 25px 33px;
+}
+.about-arrow {
+  background: #335B6B;
+}
+
+.products-title {
+  margin-left: 60px;
+  padding: 0 548px 2px 547px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 42px;
+}
+.products-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+}
+.products-box-card {
+  display: flex;
+  flex-direction: column;
+  background: #F9F8F8;
+  border-radius: 30px;
+  width: 447px;
+  height: 590px;
+}
+.products-box-card-vegetable {
+  padding: 5px 20px;
+  background: #274C5B;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.products-box-card-image {
+  width: 387px;
+  height: 378px;
+  padding: 0 30px 19px 30px;
+}
+.products-box-card-name {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  margin-left: 30px;
+  margin-bottom: 11px;
+}
+.products-box-card-line {
+  background: #D4D4D4;
+  width: 387px;
+  margin-left: 30px;
+  margin-bottom: 11px;
+}
+.products-box-card-price {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.about-button-text {
-  font-size: 19px;
+.products-box-card-price-old {
+  font-size: 17px;
+  text-decoration-line: line-through;
+  color: #B8B8B8;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.products-box-card-price-new {
+  font-size: 18px;
   line-height: 32px;
-  letter-spacing: 0.6px;
-  text-transform: capitalize;
-  color: #FFFFFF;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  margin-right: 83px;
 }
-.about-button-arrow {
-  border: 1px solid #FFFFFF;
+.products-box-card-price-stars {
+  width: 14px;
+  height: 13px;
+  gap: 3px;
+  display: flex;
+  justify-content: flex-start;
 }/*# sourceMappingURL=style.css.map */

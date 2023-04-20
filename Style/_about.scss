@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    margin-bottom: 120px;
 
     &-image {
         border-radius: 0px;
@@ -83,26 +84,14 @@
     }
      
     &-button {
-        margin-top: 16px;
-        padding: 24px 8px 33px;
         background: #274C5B;
+        display: flex;
         border: 1px solid #274C5B;
         border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        padding: 25px 71px 25px 33px;
+    }
 
-        &-text {
-            @extend %roboto400;
-            font-size: 19px;
-            line-height: 32px;
-            letter-spacing: 0.6px;
-            text-transform: capitalize;
-            color: #FFFFFF;
-        }
-
-        &-arrow {
-            border: 1px solid #FFFFFF;
-        }
+    &-arrow {
+        background: #335B6B;
     }
 }
